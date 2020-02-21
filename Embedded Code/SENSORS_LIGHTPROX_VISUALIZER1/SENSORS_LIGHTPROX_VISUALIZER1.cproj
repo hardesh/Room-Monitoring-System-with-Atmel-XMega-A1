@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{a9dc94df-8aef-4190-b27f-5a1771626f01}</ProjectGuid>
+    <avrdevice>ATxmega128A1</avrdevice>
+    <avrdeviceseries>xmegaa</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>SENSORS_LIGHTPROX_VISUALIZER1</AssemblyName>
+    <Name>SENSORS_LIGHTPROX_VISUALIZER1</Name>
+    <RootNamespace>SENSORS_LIGHTPROX_VISUALIZER1</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data>
+  <options>
+    <option id="board.sensors_xplained.lightprox_1" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.sensors" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.utils.stdio.stdio_serial" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="sensors.lightprox.visualizer" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="xmega.drivers.ioport" value="Add" config="" content-id="Atmel.ASF" />
+  </options>
+  <configurations>
+    <configuration key="config.common.services.basic.twi.mode" value="master" default="master" content-id="Atmel.ASF" />
+    <configuration key="config.board.xmega_a1_xplained.led" value="yes" default="yes" content-id="Atmel.ASF" />
+  </configurations>
+  <files>
+    <file path="src/data_visualizer.c" framework="" version="" source="common/applications/sensors/lightprox_visualizer/data_visualizer.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/data_visualizer.h" framework="" version="" source="common/applications/sensors/lightprox_visualizer/data_visualizer.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/main.c" framework="" version="" source="common/applications/sensors/lightprox_visualizer/main.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/boards/board.h" framework="" version="" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/boards/sensors_xplained/sensors_xplained.c" framework="" version="" source="common/boards/sensors_xplained/sensors_xplained.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/boards/sensors_xplained/sensors_xplained.h" framework="" version="" source="common/boards/sensors_xplained/sensors_xplained.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/boards/sensors_xplained/xplained_headers.h" framework="" version="" source="common/boards/sensors_xplained/xplained_headers.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/genclk.h" framework="" version="" source="common/services/clock/genclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/osc.h" framework="" version="" source="common/services/clock/osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/pll.h" framework="" version="" source="common/services/clock/pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/sysclk.h" framework="" version="" source="common/services/clock/sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/xmega/osc.h" framework="" version="" source="common/services/clock/xmega/osc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/xmega/pll.h" framework="" version="" source="common/services/clock/xmega/pll.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/xmega/sysclk.c" framework="" version="" source="common/services/clock/xmega/sysclk.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/clock/xmega/sysclk.h" framework="" version="" source="common/services/clock/xmega/sysclk.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/delay/delay.h" framework="" version="" source="common/services/delay/delay.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/delay/xmega/cycle_counter.h" framework="" version="" source="common/services/delay/xmega/cycle_counter.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/gpio/gpio.h" framework="" version="" source="common/services/gpio/gpio.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/gpio/xmega_gpio/xmega_gpio.h" framework="" version="" source="common/services/gpio/xmega_gpio/xmega_gpio.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/ioport/ioport.h" framework="" version="" source="common/services/ioport/ioport.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/ioport/xmega/ioport.h" framework="" version="" source="common/services/ioport/xmega/ioport.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/ioport/xmega/ioport_compat.c" framework="" version="" source="common/services/ioport/xmega/ioport_compat.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/ioport/xmega/ioport_compat.h" framework="" version="" source="common/services/ioport/xmega/ioport_compat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/akm/ak8975.c" framework="" version="" source="common/services/sensors/drivers/akm/ak8975.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/akm/ak8975.h" framework="" version="" source="common/services/sensors/drivers/akm/ak8975.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma020.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma020.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma020.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma020.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma150.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma150.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma150.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma150.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma180.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma180.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma180.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma180.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma220.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma220.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma220.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma220.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma222.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma222.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma222.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma222.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma250.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma250.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma250.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma250.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma_axis.inc.c" framework="" version="" source="common/services/sensors/drivers/bosch/bma_axis.inc.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bma_axis.inc.h" framework="" version="" source="common/services/sensors/drivers/bosch/bma_axis.inc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bmp.c" framework="" version="" source="common/services/sensors/drivers/bosch/bmp.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/bosch/bmp.h" framework="" version="" source="common/services/sensors/drivers/bosch/bmp.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/honeywell/hmc5883l.c" framework="" version="" source="common/services/sensors/drivers/honeywell/hmc5883l.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/honeywell/hmc5883l.h" framework="" version="" source="common/services/sensors/drivers/honeywell/hmc5883l.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/invensense/imu3000.c" framework="" version="" source="common/services/sensors/drivers/invensense/imu3000.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/invensense/imu3000.h" framework="" version="" source="common/services/sensors/drivers/invensense/imu3000.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/invensense/itg3200.c" framework="" version="" source="common/services/sensors/drivers/invensense/itg3200.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/invensense/itg3200.h" framework="" version="" source="common/services/sensors/drivers/invensense/itg3200.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/kionix/kxtf9.c" framework="" version="" source="common/services/sensors/drivers/kionix/kxtf9.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/kionix/kxtf9.h" framework="" version="" source="common/services/sensors/drivers/kionix/kxtf9.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/osram/sfh5712.c" framework="" version="" source="common/services/sensors/drivers/osram/sfh5712.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/osram/sfh5712.h" framework="" version="" source="common/services/sensors/drivers/osram/sfh5712.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/osram/sfh7770.c" framework="" version="" source="common/services/sensors/drivers/osram/sfh7770.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/drivers/osram/sfh7770.h" framework="" version="" source="common/services/sensors/drivers/osram/sfh7770.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/math/fixed.h" framework="" version="" source="common/services/sensors/math/fixed.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/math/fixed_t.h" framework="" version="" source="common/services/sensors/math/fixed_t.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/math/precision.h" framework="" version="" source="common/services/sensors/math/precision.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_clock.h" framework="" version="" source="common/services/sensors/module_config/conf_clock.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_platform.h" framework="" version="" source="common/services/sensors/module_config/conf_platform.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_sensors.h" framework="" version="" source="common/services/sensors/module_config/conf_sensors.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/physics/constants.h" framework="" version="" source="common/services/sensors/physics/constants.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/physics/physics.c" framework="" version="" source="common/services/sensors/physics/physics.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/physics/physics.h" framework="" version="" source="common/services/sensors/physics/physics.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor.c" framework="" version="" source="common/services/sensors/sensor.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor.h" framework="" version="" source="common/services/sensors/sensor.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_bus.c" framework="" version="" source="common/services/sensors/sensor_bus.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_bus.h" framework="" version="" source="common/services/sensors/sensor_bus.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_dev.h" framework="" version="" source="common/services/sensors/sensor_dev.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_nvram.c" framework="" version="" source="common/services/sensors/sensor_nvram.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_nvram.h" framework="" version="" source="common/services/sensors/sensor_nvram.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/sensors/sensor_platform.c" framework="" version="" source="common/services/sensors/sensor_platform.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/serial/serial.h" framework="" version="" source="common/services/serial/serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/serial/usart_serial.c" framework="" version="" source="common/services/serial/usart_serial.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/serial/xmega_usart/usart_serial.h" framework="" version="" source="common/services/serial/xmega_usart/usart_serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/twi/twi_master.h" framework="" version="" source="common/services/twi/twi_master.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/twi/twi_slave.h" framework="" version="" source="common/services/twi/twi_slave.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/twi/xmega_twi/twi_master.h" framework="" version="" source="common/services/twi/xmega_twi/twi_master.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/services/twi/xmega_twi/twi_slave.h" framework="" version="" source="common/services/twi/xmega_twi/twi_slave.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/interrupt.h" framework="" version="" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" framework="" version="" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/make/Makefile.avr.in" framework="" version="" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/parts.h" framework="" version="" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/stdio/read.c" framework="" version="" source="common/utils/stdio/read.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/stdio/stdio_serial/stdio_serial.h" framework="" version="" source="common/utils/stdio/stdio_serial/stdio_serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/common/utils/stdio/write.c" framework="" version="" source="common/utils/stdio/write.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_board.h" framework="" version="" source="xmega/applications/xmega-lightprox-visualizer/conf/conf_board.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_twim.h" framework="" version="" source="xmega/applications/xmega-lightprox-visualizer/conf/conf_twim.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_usart_serial.h" framework="" version="" source="xmega/applications/xmega-lightprox-visualizer/conf/conf_usart_serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/boards/xmega_a1_xplained/init.c" framework="" version="" source="xmega/boards/xmega_a1_xplained/init.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/boards/xmega_a1_xplained/led.h" framework="" version="" source="xmega/boards/xmega_a1_xplained/led.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/boards/xmega_a1_xplained/xmega_a1_xplained.h" framework="" version="" source="xmega/boards/xmega_a1_xplained/xmega_a1_xplained.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/cpu/ccp.h" framework="" version="" source="xmega/drivers/cpu/ccp.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/cpu/ccp.s" framework="" version="" source="xmega/drivers/cpu/ccp.s" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/cpu/xmega_reset_cause.h" framework="" version="" source="xmega/drivers/cpu/xmega_reset_cause.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/nvm/nvm.c" framework="" version="" source="xmega/drivers/nvm/nvm.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/nvm/nvm.h" framework="" version="" source="xmega/drivers/nvm/nvm.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/nvm/nvm_asm.s" framework="" version="" source="xmega/drivers/nvm/nvm_asm.s" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/pmic/pmic.h" framework="" version="" source="xmega/drivers/pmic/pmic.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/twi/twi_common.h" framework="" version="" source="xmega/drivers/twi/twi_common.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/twi/twim.c" framework="" version="" source="xmega/drivers/twi/twim.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/twi/twim.h" framework="" version="" source="xmega/drivers/twi/twim.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/twi/twis.c" framework="" version="" source="xmega/drivers/twi/twis.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/twi/twis.h" framework="" version="" source="xmega/drivers/twi/twis.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/usart/usart.c" framework="" version="" source="xmega/drivers/usart/usart.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/drivers/usart/usart.h" framework="" version="" source="xmega/drivers/usart/usart.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/assembler.h" framework="" version="" source="xmega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/assembler/gas.h" framework="" version="" source="xmega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/bit_handling/clz_ctz.h" framework="" version="" source="xmega/utils/bit_handling/clz_ctz.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/compiler.h" framework="" version="" source="xmega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/preprocessor/mrepeat.h" framework="" version="" source="xmega/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/preprocessor/preprocessor.h" framework="" version="" source="xmega/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/preprocessor/stringz.h" framework="" version="" source="xmega/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/preprocessor/tpaste.h" framework="" version="" source="xmega/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/progmem.h" framework="" version="" source="xmega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/ASF/xmega/utils/status_codes.h" framework="" version="" source="xmega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+  </files>
+  <documentation help="http://asf.atmel.com/docs/3.40.0/xmega.applications.xmega-a1_avrsblp1_visualizer/html/index.html" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+  </dependencies>
+  <project id="xmega.applications.xmega-a1_avrsblp1_visualizer" value="Add" config="" content-id="Atmel.ASF" />
+  <board id="board.xmega_a1_xplained" value="Add" config="" content-id="Atmel.ASF" />
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=atxmega128a1 -B "%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\gcc\dev\atxmega128a1"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>CONF_STDIO_REDIRECT</Value>
+      <Value>IOPORT_XMEGA_COMPAT</Value>
+      <Value>BOARD=XMEGA_A1_XPLAINED</Value>
+      <Value>EXT_BOARD=SENSORS_XPLAINED_LIGHTPROX_1</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\include</Value>
+      <Value>../src/ASF/xmega/boards/xmega_a1_xplained</Value>
+      <Value>../src/ASF/xmega/boards</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/common/services/gpio</Value>
+      <Value>../src/ASF/common/services/ioport</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/common/utils/stdio/stdio_serial</Value>
+      <Value>../src/ASF/common/services/serial/xmega_usart</Value>
+      <Value>../src/ASF/common/services/serial</Value>
+      <Value>../src/ASF/xmega/drivers/usart</Value>
+      <Value>../src/ASF/xmega/drivers/pmic</Value>
+      <Value>../src/ASF/common/services/sensors/module_config</Value>
+      <Value>../src/ASF/common/services/sensors</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/common/services/twi</Value>
+      <Value>../src/ASF/xmega/drivers/twi</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src</Value>
+      <Value>../src/config</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -Wl,--section-start=.BOOT=0x20000 -Wl,-u,vfprintf -lprintf_flt</avrgcc.linker.miscellaneous.LinkerFlags>
+  <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=XMEGA_A1_XPLAINED -DCONF_STDIO_REDIRECT -DEXT_BOARD=SENSORS_XPLAINED_LIGHTPROX_1 -DIOPORT_XMEGA_COMPAT</avrgcc.assembler.general.AssemblerFlags>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\include</Value>
+      <Value>../src/ASF/xmega/boards/xmega_a1_xplained</Value>
+      <Value>../src/ASF/xmega/boards</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/common/services/gpio</Value>
+      <Value>../src/ASF/common/services/ioport</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/common/utils/stdio/stdio_serial</Value>
+      <Value>../src/ASF/common/services/serial/xmega_usart</Value>
+      <Value>../src/ASF/common/services/serial</Value>
+      <Value>../src/ASF/xmega/drivers/usart</Value>
+      <Value>../src/ASF/xmega/drivers/pmic</Value>
+      <Value>../src/ASF/common/services/sensors/module_config</Value>
+      <Value>../src/ASF/common/services/sensors</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/common/services/twi</Value>
+      <Value>../src/ASF/xmega/drivers/twi</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src</Value>
+      <Value>../src/config</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=atxmega128a1 -B "%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\gcc\dev\atxmega128a1"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>CONF_STDIO_REDIRECT</Value>
+      <Value>IOPORT_XMEGA_COMPAT</Value>
+      <Value>BOARD=XMEGA_A1_XPLAINED</Value>
+      <Value>EXT_BOARD=SENSORS_XPLAINED_LIGHTPROX_1</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\include</Value>
+      <Value>../src/ASF/xmega/boards/xmega_a1_xplained</Value>
+      <Value>../src/ASF/xmega/boards</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/common/services/gpio</Value>
+      <Value>../src/ASF/common/services/ioport</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/common/utils/stdio/stdio_serial</Value>
+      <Value>../src/ASF/common/services/serial/xmega_usart</Value>
+      <Value>../src/ASF/common/services/serial</Value>
+      <Value>../src/ASF/xmega/drivers/usart</Value>
+      <Value>../src/ASF/xmega/drivers/pmic</Value>
+      <Value>../src/ASF/common/services/sensors/module_config</Value>
+      <Value>../src/ASF/common/services/sensors</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/common/services/twi</Value>
+      <Value>../src/ASF/xmega/drivers/twi</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src</Value>
+      <Value>../src/config</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -Wl,--section-start=.BOOT=0x20000 -Wl,-u,vfprintf -lprintf_flt</avrgcc.linker.miscellaneous.LinkerFlags>
+  <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=XMEGA_A1_XPLAINED -DCONF_STDIO_REDIRECT -DEXT_BOARD=SENSORS_XPLAINED_LIGHTPROX_1 -DIOPORT_XMEGA_COMPAT</avrgcc.assembler.general.AssemblerFlags>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\XMEGAA_DFP\1.1.68\include</Value>
+      <Value>../src/ASF/xmega/boards/xmega_a1_xplained</Value>
+      <Value>../src/ASF/xmega/boards</Value>
+      <Value>../src/ASF/common/boards</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/common/services/gpio</Value>
+      <Value>../src/ASF/common/services/ioport</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/common/utils/stdio/stdio_serial</Value>
+      <Value>../src/ASF/common/services/serial/xmega_usart</Value>
+      <Value>../src/ASF/common/services/serial</Value>
+      <Value>../src/ASF/xmega/drivers/usart</Value>
+      <Value>../src/ASF/xmega/drivers/pmic</Value>
+      <Value>../src/ASF/common/services/sensors/module_config</Value>
+      <Value>../src/ASF/common/services/sensors</Value>
+      <Value>../src/ASF/common/services/delay</Value>
+      <Value>../src/ASF/common/services/twi</Value>
+      <Value>../src/ASF/xmega/drivers/twi</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src</Value>
+      <Value>../src/config</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\ASF\" />
+    <Folder Include="src\ASF\common\" />
+    <Folder Include="src\ASF\common\boards\" />
+    <Folder Include="src\ASF\common\boards\sensors_xplained\" />
+    <Folder Include="src\ASF\common\services\" />
+    <Folder Include="src\ASF\common\services\clock\" />
+    <Folder Include="src\ASF\common\services\clock\xmega\" />
+    <Folder Include="src\ASF\common\services\delay\" />
+    <Folder Include="src\ASF\common\services\delay\xmega\" />
+    <Folder Include="src\ASF\common\services\gpio\" />
+    <Folder Include="src\ASF\common\services\gpio\xmega_gpio\" />
+    <Folder Include="src\ASF\common\services\ioport\" />
+    <Folder Include="src\ASF\common\services\ioport\xmega\" />
+    <Folder Include="src\ASF\common\services\sensors\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\akm\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\bosch\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\honeywell\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\invensense\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\kionix\" />
+    <Folder Include="src\ASF\common\services\sensors\drivers\osram\" />
+    <Folder Include="src\ASF\common\services\sensors\math\" />
+    <Folder Include="src\ASF\common\services\sensors\physics\" />
+    <Folder Include="src\ASF\common\services\serial\" />
+    <Folder Include="src\ASF\common\services\serial\xmega_usart\" />
+    <Folder Include="src\ASF\common\services\twi\" />
+    <Folder Include="src\ASF\common\services\twi\xmega_twi\" />
+    <Folder Include="src\ASF\common\utils\" />
+    <Folder Include="src\ASF\common\utils\interrupt\" />
+    <Folder Include="src\ASF\common\utils\make\" />
+    <Folder Include="src\ASF\common\utils\stdio\" />
+    <Folder Include="src\ASF\common\utils\stdio\stdio_serial\" />
+    <Folder Include="src\ASF\xmega\" />
+    <Folder Include="src\ASF\xmega\boards\" />
+    <Folder Include="src\ASF\xmega\boards\xmega_a1_xplained\" />
+    <Folder Include="src\ASF\xmega\drivers\" />
+    <Folder Include="src\ASF\xmega\drivers\cpu\" />
+    <Folder Include="src\ASF\xmega\drivers\nvm\" />
+    <Folder Include="src\ASF\xmega\drivers\pmic\" />
+    <Folder Include="src\ASF\xmega\drivers\twi\" />
+    <Folder Include="src\ASF\xmega\drivers\usart\" />
+    <Folder Include="src\ASF\xmega\utils\" />
+    <Folder Include="src\ASF\xmega\utils\assembler\" />
+    <Folder Include="src\ASF\xmega\utils\bit_handling\" />
+    <Folder Include="src\ASF\xmega\utils\preprocessor\" />
+    <Folder Include="src\config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\asf.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_twim.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_usart_serial.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_board.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\delay\delay.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\ioport\xmega\ioport_compat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\ioport\xmega\ioport.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\math\fixed_t.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma220.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\make\Makefile.avr.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\status_codes.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\delay\xmega\cycle_counter.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\cpu\xmega_reset_cause.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\tpaste.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\bit_handling\clz_ctz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\sensor_dev.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\nvm\nvm.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma250.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\physics\constants.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\twi\twis.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\mrepeat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\math\precision.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\kionix\kxtf9.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma020.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\math\fixed.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\xmega\sysclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\data_visualizer.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma_axis.inc.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\sensor_nvram.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\assembler\gas.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\stdio\stdio_serial\stdio_serial.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\progmem.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\sensor.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\stringz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\pmic\pmic.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\akm\ak8975.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\twi\twi_master.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\twi\xmega_twi\twi_master.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\board.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\common\boards\sensors_xplained\sensors_xplained.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\common\services\ioport\ioport.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\sensors_xplained\xplained_headers.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\interrupt\interrupt_avr8.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\xmega\pll.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\serial\serial.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\invensense\itg3200.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\sensors_xplained\sensors_xplained.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\boards\xmega_a1_xplained\xmega_a1_xplained.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\serial\xmega_usart\usart_serial.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\usart\usart.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\compiler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\twi\twi_common.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\gpio\xmega_gpio\xmega_gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\sensor_bus.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_sensors.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma150.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\genclk.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\invensense\imu3000.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\physics\physics.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\twi\twim.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\parts.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\drivers\cpu\ccp.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_platform.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\preprocessor.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_clock.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bmp.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\assembler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\honeywell\hmc5883l.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\interrupt.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma180.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\gpio\gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\osram\sfh7770.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\osram\sfh5712.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\sensors\drivers\bosch\bma222.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\twi\twi_slave.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\boards\xmega_a1_xplained\led.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\twi\xmega_twi\twi_slave.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\services\clock\xmega\osc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\common\services\clock\xmega\sysclk.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\ioport\xmega\ioport_compat.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\akm\ak8975.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma020.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma150.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma180.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma220.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma222.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma250.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bma_axis.inc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\bosch\bmp.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\honeywell\hmc5883l.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\invensense\imu3000.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\invensense\itg3200.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\kionix\kxtf9.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\osram\sfh5712.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\drivers\osram\sfh7770.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\physics\physics.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\sensor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\sensor_bus.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\sensor_nvram.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\sensors\sensor_platform.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\services\serial\usart_serial.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\utils\stdio\read.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\common\utils\stdio\write.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\boards\xmega_a1_xplained\init.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\cpu\ccp.s">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\nvm\nvm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\nvm\nvm_asm.s">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\twi\twim.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\twi\twis.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\xmega\drivers\usart\usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\data_visualizer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\main.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
